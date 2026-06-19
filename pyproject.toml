@@ -1,0 +1,73 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kats"
+version = "0.2.0"
+description = "kats: kit to analyze time series"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "facebook", email = "iamxiaodong@fb.com" }]
+keywords = [
+  "time series",
+  "forecasting",
+  "anomaly detection",
+  "tsfeatures",
+  "temporal embedding",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+]
+dependencies = [
+  "attrs>=23.1.0",
+  "deprecated>=1.2.14",
+  "holidays>=0.40",
+  "matplotlib>=3.8.0",
+  "numpy>=1.26.0",
+  "pandas>=2.2.0",
+  "packaging>=23.0",
+  "python-dateutil>=2.8.2",
+  "scikit-learn>=1.4.0",
+  "scipy>=1.13.0",
+  "seaborn>=0.13.0",
+  "statsmodels>=0.14.2",
+  "lightgbm>=4.3.0",
+  "numba>=0.61.0",
+]
+
+[project.optional-dependencies]
+test = [
+  "LunarCalendar>=0.0.9",
+  "ax-platform>=1.0.0",
+  "prophet>=1.1.6",
+  "gpytorch>=1.13",
+  "parameterized>=0.9.0",
+  "plotly>=5.20.0",
+  "pymannkendall>=1.4.3",
+  "pytest-mpl>=0.16",
+  "tqdm>=4.66.0",
+  "nevergrad>=1.0.12",
+]
+
+[dependency-groups]
+dev = ["pytest"]
+
+[project.urls]
+Homepage = "https://github.com/facebookresearch/Kats"
+Download = "https://github.com/facebookresearch/Kats/archive/refs/tags/v0.2.tar.gz"
+
+[tool.setuptools.packages.find]
+include = ["kats*"]
+
+[tool.setuptools.package-data]
+"kats.data" = ["*.csv", "*.pickle", "README"]

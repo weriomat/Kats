@@ -1,17 +1,14 @@
-attrs>=21.2.0
-deprecated>=1.2.12
-importlib_metadata; python_version < '3.8'
-holidays<=0.57
-matplotlib>=2.0.0
-numpy
-pandas==3.0.3
-packaging<22
-python-dateutil>=2.8.0
-scikit-learn>=0.24.2
-scipy>=1.10.0
-seaborn>=0.11.1
-setuptools-git>=1.2
-statsmodels==0.14.6
-lightgbm>=2.3.0
-numba>=0.63.1
-typing-extensions; python_version < '3.8'
+attrs>=23.1.0
+deprecated>=1.2.14
+holidays>=0.40
+matplotlib>=3.8.0
+numpy>=1.26.0
+pandas>=2.2.0
+packaging>=23.0
+python-dateutil>=2.8.2
+scikit-learn>=1.4.0
+scipy>=1.13.0
+seaborn>=0.13.0
+statsmodels>=0.14.2
+lightgbm>=4.3.0
+numba>=0.61.0
