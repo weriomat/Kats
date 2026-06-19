@@ -49,7 +49,10 @@ TEST_DATA: Dict[str, Dict[str, Union[ThetaParams, TimeSeriesData, pd.DataFrame]]
     "constant": {
         "ts": TimeSeriesData(
             pd.DataFrame(
-                {"time": pd.date_range("1960-12-01", "1963-01-01", freq="m"), "y": 10.0}
+                {
+                    "time": pd.date_range("1960-12-01", "1963-01-01", freq="ME"),
+                    "y": 10.0,
+                }
             )
         ),
         "params": ThetaParams(m=2),
