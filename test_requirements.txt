@@ -9,5 +9,4 @@ plotly>=2.2.1
 pymannkendall>=1.4.1
 pystan==2.19.1.1
 pytest-mpl>=0.12,<0.16
-torch
 tqdm>=4.36.1
